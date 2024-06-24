@@ -1,0 +1,38 @@
+body {
+	font-family: 'Karla', sans-serif;
+	font-weight: 600;
+	background-color: #c1b0cc;
+	color: #112a46;
+}
+
+h1 {
+	margin: 0;
+}
+
+.container {
+	max-width: 25rem;
+	margin: 2.5em auto;
+	text-align: center;
+}
+
+header {
+	margin-top: 4em;
+	margin-bottom: 2em;
+}
+
+.choice-btn {
+	width: 92%;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: 600;
+	margin-bottom: 0.35em;
+	padding: 0.75em;
+	border: 2px solid #112a46;
+	border-radius: 5px;
+	background-color: #dfa2b9;
+	cursor: pointer;
+}
+
+.choice-btn:hover {
+	background-color: #c78ca3;
+}
