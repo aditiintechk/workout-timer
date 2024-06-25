@@ -1,0 +1,19 @@
+{
+	"name": "Workout Timer",
+	"short_name": "Workout Timer",
+	"icons": [
+		{
+			"src": "./assests/favicons/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "./assests/favicons/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"theme_color": "#c1b0cc",
+	"background_color": "#dfa2b9",
+	"display": "standalone"
+}
