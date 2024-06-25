@@ -22,10 +22,30 @@
         </header>
 
         <main>
-            <button id="start-btn" class="start-btn" onclick="handleWorkoutContainer()">
-                Start Workout
-            </button>
+            <section class="start-workout">
+                <button id="start-btn" class="start-btn" onclick="handleStartWorkoutBtn()">
+                    Start Workout
+                </button>
+            </section>
+
+            <section class="timer-workout">
+                <div class="timer-wrap">
+                    <h2 id="timer">00:00</h2>
+                </div>
+                <p class="message">Count: <span id="count-tracker">0</span></p>
+            </section>
+
+            <section class="background-audio">
+                <audio id="start-audio">
+                    <source src="./assests/ding-start.wav" type="audio/wav">
+                </audio>
+                <audio id="end-audio">
+                    <source src="./assests/ding-end.wav" type="audio/wav">
+                </audio>
+            </section>
         </main>
+
+
     </div>
 
     <script src="./app.js"></script>

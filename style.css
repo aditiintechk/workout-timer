@@ -36,3 +36,19 @@ header {
 .start-btn:hover {
 	background-color: #c78ca3;
 }
+.timer-workout {
+	visibility: hidden;
+}
+
+.timer-wrap {
+	font-size: 2.2rem;
+	width: 50%;
+	margin: 2em auto;
+	border: 3px solid #112a46;
+	border-radius: 10px;
+	background-color: #dfa2b9;
+}
+
+p {
+	font-size: 1.5rem;
+}
