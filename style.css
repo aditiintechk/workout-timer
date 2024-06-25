@@ -1,12 +1,14 @@
 body {
 	font-family: 'Karla', sans-serif;
 	font-weight: 600;
+	font-size: 1.2rem;
 	background-color: #c1b0cc;
 	color: #112a46;
 }
 
 h1 {
 	margin: 0;
+	font-size: 2.1rem;
 }
 
 .container {
@@ -16,23 +18,21 @@ h1 {
 }
 
 header {
-	margin-top: 4em;
-	margin-bottom: 2em;
+	margin: 4em 0 3em;
 }
 
-.choice-btn {
-	width: 92%;
+.start-btn {
 	font-size: inherit;
 	font-family: inherit;
 	font-weight: 600;
 	margin-bottom: 0.35em;
-	padding: 0.75em;
+	padding: 0.75em 1.5em;
 	border: 2px solid #112a46;
 	border-radius: 5px;
 	background-color: #dfa2b9;
 	cursor: pointer;
 }
 
-.choice-btn:hover {
+.start-btn:hover {
 	background-color: #c78ca3;
 }
