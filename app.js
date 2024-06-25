@@ -22,7 +22,7 @@ function startTimer() {
 	let count = 1
 
 	const runTimer = () => {
-		let seconds = 15
+		let seconds = 30
 		displayTime(seconds)
 		startAudio.play()
 		const countdown = setInterval(() => {
@@ -33,7 +33,7 @@ function startTimer() {
 				clearInterval(countdown)
 				timerDisplay.textContent = '00:00'
 				countTracker.textContent = count
-				if (count < 20) {
+				if (count < 10) {
 					setTimeout(runTimer, 3000)
 				} else {
 					message.textContent = 'Workout complete!'
