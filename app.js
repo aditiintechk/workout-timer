@@ -6,9 +6,11 @@ const countTracker = document.getElementById('count-tracker')
 const message = document.querySelector('.message')
 const startAudio = document.getElementById('start-audio')
 const endAudio = document.getElementById('end-audio')
+const completeAudio = document.getElementById('complete-audio')
 
 startAudio.load()
 endAudio.load()
+completeAudio.load()
 
 function handleStartWorkoutBtn() {
 	startTimerContainer.style.visibility = 'hidden'
@@ -20,6 +22,7 @@ function handleStartWorkoutBtn() {
 // Start the Timer
 function startTimer() {
 	let count = 1
+	message.textContent = 'Count: 0'
 
 	const runTimer = () => {
 		let seconds = 30
@@ -32,17 +35,18 @@ function startTimer() {
 			} else {
 				clearInterval(countdown)
 				timerDisplay.textContent = '00:00'
-				countTracker.textContent = count
+				message.textContent = `Count: ${count}`
 				if (count < 10) {
+					endAudio.play()
 					setTimeout(runTimer, 3000)
-				} else {
+				} else if (count === 10) {
 					message.textContent = 'Workout complete!'
+					completeAudio.play()
 					setTimeout(() => {
 						backToHome()
 					}, 2000)
 				}
 				count++
-				endAudio.play()
 			}
 		}, 1000)
 	}
